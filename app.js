@@ -9,10 +9,13 @@ let timer = false;
 function start() {
   timer = true;
   stopWatch();
+  document.getElementById("start").disabled = "true";
+  
 }
 
 function stop() {
   timer = false;
+  document.getElementById("start").removeAttribute("disabled");
 }
 
 function reset() {
@@ -25,6 +28,7 @@ function reset() {
   document.getElementById("min").innerHTML = "00" + "min";
   document.getElementById("sec").innerHTML = "00" + "sec";
   document.getElementById("count").innerHTML = "00";
+  document.getElementById("start").removeAttribute("disabled");
 }
 
 function stopWatch() {

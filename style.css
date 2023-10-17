@@ -25,6 +25,9 @@ body {
   color: white;
   cursor: pointer;
 }
+button[disabled] {
+  background: grey;
+}
 
 .watch-btn-start {
   background: cadetblue;
